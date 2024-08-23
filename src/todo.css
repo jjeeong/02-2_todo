@@ -1,0 +1,100 @@
+.todo-header > h1 {
+  margin: 0;
+  background: #ff512f; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #dd2476,
+    #ff512f
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #dd2476,
+    #ff512f
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  padding: 20px;
+  text-align: center;
+  color: #fff;
+}
+
+.todo-content {
+  /* width: 1200px; */
+  width: 700px;
+  margin: 50px auto;
+}
+
+.input-box {
+  display: flex;
+  gap: 30px;
+}
+.input-box > input {
+  outline: none;
+  border: none;
+  border-bottom: 2px solid #ccc;
+  flex-grow: 1;
+}
+.input-box > button {
+  width: 200px;
+  padding: 10px;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+
+  background: #ff512f; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #dd2476,
+    #ff512f
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #dd2476,
+    #ff512f
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.todo-list-wrap {
+  margin-top: 30px;
+}
+.todo {
+  margin: 5px;
+  list-style: none;
+  padding: 10px;
+  border: 1px solid #ccc;
+  display: flex;
+}
+
+.todo-like {
+  width: 10%;
+}
+
+.todo-like > span {
+  cursor: pointer;
+  color: #dd2476;
+}
+
+.todo-done.todo-done {
+  text-decoration: line-through;
+}
+
+.todo-text {
+  width: 60%;
+}
+.todo-date {
+  width: 20%;
+  text-align: center;
+}
+.todo-btn {
+  width: 10%;
+  text-align: right;
+}
+
+.todo-btn > .done {
+  cursor: pointer;
+  color: darkslategray;
+}
+
+.todo-btn > .delete {
+  cursor: pointer;
+  color: #dd2476;
+}
